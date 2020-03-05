@@ -234,19 +234,19 @@ def compute_lo(w_deg, v_deg, la, inclinaison):
 
 
 if __name__ == '__main__':
-    #p = '.' + str(int(input('Nombre de chiffre après la virgule : '))) + 'f'
-    #a = float(input('[Demi-grand axe (km)] a = '))
-    #e = float(input('[Excentricité] e = '))
-    #i = float(input('[Inclinaison (deg)] i = '))
-    #w = float(input('[Argument du périgé (deg)] w = '))
-    #L_omega = float(input('[Longitude du noeud ascendant (deg)] L_omega = '))
+    p = '.' + str(int(input('Nombre de chiffre après la virgule : '))) + 'f'
+    a = float(input('[Demi-grand axe (km)] a = '))
+    e = float(input('[Excentricité] e = '))
+    i = float(input('[Inclinaison (deg)] i = '))
+    w = float(input('[Argument du périgé (deg)] w = '))
+    L_omega = float(input('[Longitude du noeud ascendant (deg)] L_omega = '))
 
-    p = '.3f'
-    a = 40708
-    e = 0.8320
-    i = 61
-    w = 270
-    L_omega = 120
+    #p = '.3f'
+    #a = 40708
+    #e = 0.8320
+    #i = 61
+    #w = 270
+    #L_omega = 120
 
     r_T = 6378  # km : Rayon de la Terre
     mu_T = 398_600  # km^3/s^2 : Paramètre gravitationnel réduit
