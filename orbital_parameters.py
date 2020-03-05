@@ -190,10 +190,10 @@ def compute_t(v_c_deg, v_deg, excentricity, n):
 
 
 def determine_correction_for_lo(w_deg, v_deg, inclinaison):
-    if -w_deg-1170 < v_deg <= -w_deg-630:
+    if -w_deg-630 < v_deg <= -w_deg-450:
         correction = -540
         minus = True
-    elif -w_deg-630 < v_deg <= -w_deg-270:
+    elif -w_deg-450 < v_deg <= -w_deg-270:
         correction = -360
         minus = False
     elif -w_deg-270 < v_deg <= -w_deg-90:
@@ -205,10 +205,10 @@ def determine_correction_for_lo(w_deg, v_deg, inclinaison):
     elif -w_deg+90 < v_deg <= -w_deg+270:
         correction = 180
         minus = True
-    elif -w_deg+270 < v_deg <= -w_deg+630:
+    elif -w_deg+270 < v_deg <= -w_deg+450:
         correction = 360
         minus = False
-    elif -w_deg+630 < v_deg <= -w_deg+1170:
+    elif -w_deg+450 < v_deg <= -w_deg+630:
         correction = 540
         minus = True
     else:
@@ -244,12 +244,12 @@ if __name__ == '__main__':
     w = float(input('[Argument du périgé (deg)] w = '))
     L_omega = float(input('[Longitude du noeud ascendant (deg)] L_omega = '))
 
-    # p = '.3f'
-    # a = 40708
-    # e = 0.8320
-    # i = 61
-    # w = 270
-    # L_omega = 120
+    #p = '.3f'
+    #a = 40708
+    #e = 0.8320
+    #i = 61
+    #w = 270
+    #L_omega = 120
 
     r_T = 6378  # km : Rayon de la Terre
     mu_T = 398_600  # km^3/s^2 : Paramètre gravitationnel réduit
